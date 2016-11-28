@@ -27,6 +27,8 @@ public class SearchController extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		LOGGER.debug("doGet search");
 		req.getRequestDispatcher("/WEB-INF/JSP/search-form.jsp").forward(req, resp);
+		
+		req
 	}
 	
 	private boolean isValid(String name) {
